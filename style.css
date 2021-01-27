@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --apple-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-image:
+        radial-gradient(100% 60% ellipse at right top, #31319e 0%, rgba(243, 236, 236, 0) 100%),
+        radial-gradient(60% 50% ellipse at center bottom, #29276e 0%, #12122e 100%);
+    font-size: 1em;
+    margin: 2% 0 0 5%;
+    justify-content: center;
+    height: 40vw;
+}
+
+form {
+    background: #f0f5fe;
+    width: 50vw;
+    height: 30vw;
+    border-radius: 5px;
+}
+
+fieldset {
+    border: 1px solid rgba(44, 44, 44, 0.664);
+    border-radius: 5px;
+}
+
+h1, p, label, button {
+    font-family: var(--apple-font);
+    align-items: center;
+}
+
+h1, p {
+    color: #fefef5;
+    
+}
+
+label{
+    margin-left: 1%;
+    font-weight: 500;
+    color: #1e1e58;
+}
+
+input, select, textarea, button {
+    border-radius: 3px;
+    margin-left: 1em;
+}
+
+input:hover, textarea:hover, select:hover, checkbox:hover {
+    background:  #e2e2e7;
+}
+
+div label {
+    margin-bottom: 0.2em;
+    color: #27276b;
+    display: block;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+fieldset .grupo .campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #202e50;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #d5d5da;
+}
+
+.botao {
+    margin-top: 0.8em;
+    font-size: 1em;
+    width: 5vw;
+    color: #fefef1;
+    text-shadow: 1px 1px 1px rgba(27, 27, 27, 0.3);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    background: #31319e;
+    position: absolute;
+    padding: 0.2em 0.4em;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #3a3ab8;
+}
+
+#checkbox label {
+    display: inline;
+}
+
+

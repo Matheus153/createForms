@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form sr.Novato</title>
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/61/61715.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="log.js"></script>
+    
+</head>
+<body>
+    <div>
+        <h1>Formulário</h1>
+        <p>Preencha os campos:</p>
+        <br>
+    </div>
+        
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div class="campo">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="sobrenome" name="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" id="email"required>
+        </div>
+
+        <div class="campo">
+            <label>Gênero</label>
+            <label>
+               <input type="radio">masculino<!-- checked para já deixar pre-marcado -->
+               <input type="radio">feminino
+               <input type="radio">outro
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="training">Escolaridade</label>
+            <select name="training" id="training">
+                <option value="" selected disabled></option>
+                <option value="">Não definida</option>
+                <option value="">Ensino Fundamental</option>
+                <option value="">Ensino Médio</option>
+                <option value="">Ensino Superior</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="checkbox">
+                <label>Selecione suas áreas de interesse:</label><br><br>
+
+                <input type="checkbox" name="tecnologia" id="tec" value="tecnologia">
+                <label for="tecnologia">Tecnologia</label>
+                <input type="checkbox" name="estatistic" id="esta" value="estatistic">
+                <label for="estatistic">Estátistica</label>
+                <input type="checkbox" name="jornalismo" id="jornal" value="jornalismo">
+                <label for="jornalismo">Jornalismo</label>
+                <input type="checkbox" name="literatura" id="literatura" value="literatura">
+                <label for="literatura">Literatura</label>
+                <input type="checkbox" name="astro" id="astro" value="astronomia">
+                <label for="astronomia">Astronomia</label>
+                <input type="checkbox" name="moda" id="moda" value="moda">
+                <label for="moda">Moda</label>
+            </div>
+        </fieldset><br>
+
+        <div class="campo">
+            <label>Qual o aplicativo que mais tem usado?</label>
+            <textarea row= "1" name="app" id="app" cols="20" style= "width:26em" ></textarea>
+        </div>
+
+        <button class="botao" type="button" onclick="cadastroForm()" >Concluir</button>
+    </form>
+    
+</body>
+</html>
