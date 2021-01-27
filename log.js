@@ -27,3 +27,15 @@ function cadastroForm() {
     sobrenome.value = "";
     email.value = "";
 }
+
+/* function selectGender() {
+    $(document).ready(function () {
+        $('input[type=radio]').change(function() {
+            $('input[type=radio]:checked').not(this).prop('checked', false);
+        });
+    });
+}
+ */
+
+
+
