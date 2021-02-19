@@ -13,18 +13,31 @@ body{
     font-size: 1em;
     margin: 2% 0 0 5%;
     justify-content: center;
-    height: 40vw;
+    
 }
 
 form {
     background: #f0f5fe;
-    width: 50vw;
-    height: 30vw;
+    
+    max-width: 750px;
+    margin-bottom: 2em;
+    height: 34vw;
     border-radius: 5px;
     padding: 0 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+    margin: auto auto 2em 0
+   /*  padding-top: 45px;
+    margin: auto 38%; 
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    
     
 }
 
@@ -81,6 +94,10 @@ fieldset .grupo .campo {
     margin-right: 1em;
 }
 
+#checkbox {
+   margin-bottom: 1em;
+}
+
 .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
     padding: 0.2em;
     border: 1px solid #202e50;
@@ -97,21 +114,21 @@ fieldset .grupo .campo {
 }
 
 .botao {
-    margin-top: 0.8em;
-    font-size: 1em;
-    width: 5vw;
+
     color: #fefef1;
     text-shadow: 1px 1px 1px rgba(27, 27, 27, 0.3);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     background: #31319e;
-    position: absolute;
-    padding: 0.2em 0.4em;
-    transition: 0.3s;
-
-    position: absolute;
-    bottom: 48px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    max-width: 110px;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    outline: 0;
+    transition: .3s;
+    cursor: pointer;
 }
 
 .botao:hover {
@@ -120,6 +137,19 @@ fieldset .grupo .campo {
 
 #checkbox label {
     display: inline;
+}
+
+
+
+@media (max-width: 500px) {
+
+    form {
+        margin: auto;
+        padding: 15px;
+        min-height: 92vh;
+        
+    }
+    
 }
 
 
